@@ -1,0 +1,42 @@
+h1 {
+    margin: auto;
+    text-align: center;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: #1d6d75;
+    font-size: 50px;
+}
+
+#container {
+    display: grid;
+    height: 960px;
+    width: 960px;
+    margin: auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+    background-color: #ebebeb;
+    grid-gap: 1px;
+    border: 1px solid;
+
+    
+}
+
+.etch {
+    
+    background-color: white;
+    transition: background-color 400ms ease-in 10s;
+}
+
+.etch:hover {
+    background-color: black;
+    transition: none;
+}
+
+#reset {
+    float: right;
+    font-size: 15px;
+    background-color: #e8f5d5;
+    color: #1d6d75;
+    height: 33px;
+    width: 100px;
+}
+
